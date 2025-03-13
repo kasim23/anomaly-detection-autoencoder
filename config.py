@@ -1,0 +1,4 @@
+BATCH_SIZE = 32
+LEARNING_RATE = 0.001
+EPOCHS = 50
+DATA_PATH = '/home/hoover/u15/ssudais/ECG5000_TRAIN.arff'
