@@ -54,7 +54,7 @@ The data is stored in **ARFF** files, which are loaded using `scipy.io.arff`.
 anomaly-detection/
 ├── main.py
 ├── config.py
-├── requirements.txt       (optional: if you list your dependencies)
+├── requirements.txt       
 ├── results/               (stores model checkpoints, plots, etc.)
 ├── src/
 │   ├── __init__.py
