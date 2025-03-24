@@ -1,7 +1,3 @@
-Below is a **README.md** template that you can place at the root of your project. Feel free to modify or expand it as you integrate MLflow, containerization, and deployment steps later.
-
----
-
 # Heartbeat Anomaly Detection with LSTM Autoencoders
 
 This repository contains a project aimed at detecting abnormal heartbeats (anomalies) using a Recurrent Autoencoder (LSTM-based). The dataset consists of ECG signals, each representing a single heartbeat with 140 time steps.
