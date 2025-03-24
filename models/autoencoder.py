@@ -1,6 +1,7 @@
 from torch import nn
 from models.encoder import Encoder
 from models.decoder import Decoder
+from config import device
 
 
 class RecurrentAutoencoder(nn.Module):

@@ -1,4 +1,6 @@
 import pandas as pd
+import torch
+import matplotlib.pyplot as plt
 
 def plot_time_series_class(data, class_name, ax, n_steps=10):
     time_series_df = pd.DataFrame(data)
@@ -26,3 +28,14 @@ def plot_time_series_class(data, class_name, ax, n_steps=10):
     
     # Set the title of the plot to the class name
     ax.set_title(class_name)
+    
+
+def plot_threshold_results(thresholds, recalls_normal, recalls_anomaly):
+    plt.figure()
+    plt.plot(thresholds, recalls_normal, label="Normal Recall")
+    plt.plot(thresholds, recalls_anomaly, label="Abnormal Recall")
+    plt.xlabel("Threshold")
+    plt.ylabel("Recall")
+    plt.legend()
+    plt.title("Recall vs. Threshold")
+    plt.show()

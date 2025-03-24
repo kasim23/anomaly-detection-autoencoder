@@ -2,9 +2,10 @@
 import torch
 from models.autoencoder import RecurrentAutoencoder
 from src.train import train_model
+from config import device
 
 def evaluate_recall(model, dataset, threshold, criterion):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     correct = 0
     for seq in dataset:
         seq = seq.to(device)

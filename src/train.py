@@ -2,10 +2,11 @@ import torch
 from torch import nn
 import copy
 import numpy as np
+from config import device
 
 
 def train_model(model, train_dataset, val_dataset, n_epochs):
-  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
   criterion = nn.L1Loss(reduction='sum').to(device)
   history = dict(train=[], val=[])
